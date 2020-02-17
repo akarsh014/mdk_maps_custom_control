@@ -1,0 +1,54 @@
+{
+	"Caption": "Extensions Demo",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Buttons": [
+						{
+							"OnPress": "/demoApplication/Actions/Customers/NavToCustomers_List.action",
+							"TextAlignment": "center",
+							"Title": "Customers"
+						},
+						{
+							"OnPress": "/demoApplication/Actions/Products/NavToProducts_List.action",
+							"TextAlignment": "center",
+							"Title": "Products"
+						}
+					],
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Name": "SectionButtonTable0",
+					"_Type": "Section.Type.ButtonTable"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"ToolBar": {
+		"Controls": [
+			{
+				"Caption": "Logout",
+				"Clickable": true,
+				"Enabled": true,
+				"OnPress": "/demoApplication/Actions/Logout.action",
+				"Visible": true,
+				"_Name": "LogoutToolbarItem",
+				"_Type": "Control.Type.ToolbarItem"
+			},
+			{
+				"Caption": "Sync",
+				"Clickable": true,
+				"Enabled": true,
+				"OnPress": "/demoApplication/Actions/Service/SyncStartedMessage.action",
+				"Visible": true,
+				"_Name": "UploadToolbarItem",
+				"_Type": "Control.Type.ToolbarItem"
+			}
+		]
+	},
+	"_Name": "Main",
+	"_Type": "Page"
+}

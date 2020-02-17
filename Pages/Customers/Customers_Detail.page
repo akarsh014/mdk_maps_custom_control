@@ -1,0 +1,67 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/demoApplication/Actions/Customers/NavToCustomers_Edit.action",
+				"Position": "right",
+				"SystemItem": "Edit"
+			},
+			{
+				"OnPress": "/demoApplication/Rules/Customers/Customers_DeleteConfirmation.js",
+				"Position": "right",
+				"SystemItem": "Trash"
+			}
+		]
+	},
+	"Caption": "Customer Details",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Description": "{CustomerId}",
+						"Footnote": "{FirstName}",
+						"HeadlineText": "{City}",
+						"StatusText": "{DateOfBirth}",
+						"Subhead": "{Country}",
+						"SubstatusText": "{EmailAddress}",
+						"Tags": [
+						]
+					},
+					"_Name": "SectionObjectHeader0",
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"Class": "googleMaps",
+					"Control": "googleMaps",
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ExtensionProperties": { 
+						"Prop":{
+							"LastName": "{LastName}",
+							"HouseNumber": "{HouseNumber}",
+							"Street": "{Street}",
+							"City": "{City}",
+							"Country": "{Country}",
+							"PostalCode":"{PostalCode}"
+						}
+					},
+					"Header": {
+						"Caption": "customer Location",
+						"UseTopPadding": true
+					},
+					"Height": 600,
+					"Module": "extension-maps",
+					"Visible": true,
+					"_Name": "gooleMapsExtension",
+					"_Type": "Section.Type.Extension"
+				}
+			],
+			"_Name": "SectionedTable",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "Customers_Detail",
+	"_Type": "Page"
+}
