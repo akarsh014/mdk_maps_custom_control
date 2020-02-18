@@ -9,7 +9,7 @@ import {getJSON, getString, request, HttpResponse } from "tns-core-modules/http"
 //var GMSServices: any;
 /* NOTES - 
 	for android devices -
-		1) <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCdPVZiHXgaxIF6H1qOHzFHNaO0k5dAZt0" /> // add this line in androidmanifest.xml
+		1) <meta-data android:name="com.google.android.geo.API_KEY" android:value="Enter API Key over here" /> // add this line in androidmanifest.xml
 		2) dependencies {
       		implementation 'com.google.android.gms:play-services-maps:17.0.0'
     		} // add this line to app.gradle
@@ -88,7 +88,7 @@ export class googleMaps extends IControl implements com.google.android.gms.maps.
         } else if (app.ios){
         	console.log("inside ios 2");
         	//https://developers.google.com/maps/documentation/ios-sdk/reference/interface_g_m_s_map_view - documentation for google maps for ios.....
-        	GMSServices.provideAPIKey("AIzaSyCdPVZiHXgaxIF6H1qOHzFHNaO0k5dAZt0");
+        	GMSServices.provideAPIKey("Enter API key over here");
         	//this._mapView = GMSMapView.moveCamera(GMSCameraUpdate.setTarget(CLLocationCoordinate2D(latitude: (mapView.myLocation?.coordinate.latitude)!, longitude: (mapView.myLocation?.coordinate.longitude)!), zoom: 16);
         } else {}
 	}
