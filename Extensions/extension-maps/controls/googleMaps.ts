@@ -38,7 +38,7 @@ export class googleMaps extends IControl implements com.google.android.gms.maps.
 	private _postalCode:any;
 	private _customerAddress: String;
 	private _geocoder: any;
-	private _APIKey = "AIzaSyCdPVZiHXgaxIF6H1qOHzFHNaO0k5dAZt0";
+	private _APIKey = "Enter API Key over here";
 	private _GEOCODE_ADDRESS_URL: any;
 	private _address = new Object();
 	
